@@ -71,6 +71,10 @@
         <h1>{{ page.title }}</h1>
         <small>
             {{ page.date | date(format="%B %d, %Y") }}
+            {% if page.extra.repo_url %}
+                - 
+                <a href="{{ page.extra.repo_url }}">repo</a> for this article
+            {% endif %}
             {% if page.taxonomies.tags %}
                 - 
                 <span class="tags">
@@ -88,11 +92,7 @@
 
     <hr class="footer-rule" />
 
-    {% if config.extra.theme.footer_about %}
-        <div class="footer-about">
-            {{ config.extra.theme.footer_about | markdown | safe }}
-        </div>
-    {% endif %}
+    {% block footer %}{% endblock footer %}
 
     <div class="related-container">
         <div class="link">
