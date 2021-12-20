@@ -7,11 +7,10 @@ min_version = "0.4.0"
 
 generate_feed = true
 
-[extra]
-
+[extra.theme]
 nav = [
-  { name = "About", path = "/about/" },
-  { name = "Blog", path = "/blog/" }
+    { name = "About", path = "/about/" },
+    { name = "Blog", path = "/blog/" }
 ]
 
 blog_path = "blog"

@@ -13,18 +13,18 @@ You can find installation instructions [on the Zola website](https://www.getzola
 
 1. After you've installed the Zola CLI, run the following command to create a new site:
 
-   ```sh
-   zola init my_amazing_site
-   cd my_amazing_site
-   ```
+     ```sh
+     zola init my_amazing_site
+     cd my_amazing_site
+     ```
 
 2. After you've created the site, install the "Simple Dev Blog" theme like so:
 
-   ```sh
-   git clone --depth=1 \
-     https://github.com/bennetthardwick/simple-dev-blog-zola-starter \
-     themes/simple-dev-blog
-   ```
+     ```sh
+     git clone --depth=1 \
+         https://github.com/bennetthardwick/simple-dev-blog-zola-starter \
+         themes/simple-dev-blog
+     ```
 
 3. Now in your `config.toml` file, choose the theme by setting `theme = "simple-dev-blog"`.
 
@@ -34,9 +34,9 @@ You can find installation instructions [on the Zola website](https://www.getzola
 
 6. That's it! Now build your site by running the following command, and navigate to `127.0.0.1:111`:
 
-   ```sh
-   zola serve
-   ```
+     ```sh
+     zola serve
+     ```
 
 You should now have a speedy simple dev blog up and running, have fun!
 
@@ -54,7 +54,7 @@ The following options should be under the `[extra]` in `config.toml`
 - `default_og_image` - the path default og:image for your page
 - `footer_about` - the content for your footer in markdown
 - `icon` - the path to the icon for your site in the content folder
-  - E.g to add the file `icon.png` you should put it in `content/icon.png`
+    - E.g to add the file `icon.png` you should put it in `content/icon.png`
 - `nav` - see `theme.toml`, the navigation links for your site
 - `not_found_message` - the content for your 404 page in markdown
 - `profile_large` - the path to a larger vertical version of your profile picture in the content folder

@@ -18,7 +18,7 @@ description = "A simple dev blog theme with no javascript, prerendered linked pa
 generate_feed = true
 
 taxonomies = [
-  { name = "tags" }
+    { name = "tags" }
 ]
 
 [extra]
@@ -26,8 +26,8 @@ taxonomies = [
 dark_mode = false
 
 nav = [
-  { name = "About", path = "/about/" },
-  { name = "Blog", path = "/blog/" }
+    { name = "About", path = "/about/" },
+    { name = "Blog", path = "/blog/" }
 ]
 
 latest_text = "Check out my latest post:"
